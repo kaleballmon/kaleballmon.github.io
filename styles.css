@@ -1,3 +1,4 @@
+/* globals */
 a {
 	text-decoration: none;
 	color: blue;
@@ -9,13 +10,12 @@ a:visited {
 
 body {
 	font-family: 'Helvetica';
-	margin: 0%;
+	margin: 0;
 }
 
 
 p {
-	margin: 3rem;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .bigGrid {
@@ -24,26 +24,47 @@ p {
 	align-items: center;
 }
 
-img {
-	height: 600px;
-	width: 600px;
-	margin: 24px;
-	
+.bigGrid > * {
+	width: 90vw;
+	padding: 24px;
 }
 
-@media screen and (min-width: 600px) {
+img {
+	width: 100%;
+}
+
+.introContainer {
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+}
+
+#introText {
+	font-size: 36px;
+}
+
+@media screen and (min-width: 800px) {
 	.bigGrid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		justify-self: center;
-		max-width: 100%;
-		height: 100%;
+		width: 90vw;
+		gap: 24px;
+		margin: 24px;
 	}
 
+	.bigGrid > *{
+		width: 80%;
+		height: 80%;
+	}
+	
 	img {
-		height: 400px;
-		width: 400px;
-		margin: 36px;
+		height: 100%;
+		width: 100%;
 	}
 
 	.one {
@@ -94,20 +115,7 @@ img {
 	}
 }
 
-.introContainer {
-	text-align: center;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
-}
-
-#introText {
-	font-size: 36px;
-}
-
+/* animations */
 @keyframes colorTransition {
 	from {
 		color: black;
@@ -117,12 +125,7 @@ img {
 		color: #d8b800;
 	}
 }
+
 .slowYellow {
 	animation: colorTransition 3s forwards;
-}
-
-@media screen and (min-width: 800px) {
-	#introText {
-		font-size: 72px;
-	}
 }

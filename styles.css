@@ -22,7 +22,7 @@ p {
 	flex-direction: column;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1500px) {
 	.bigGrid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

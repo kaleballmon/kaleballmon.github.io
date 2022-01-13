@@ -1,0 +1,98 @@
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+body {
+	font-family: 'Helvetica';
+	margin: 0%;
+}
+
+img {
+	height: 90%;
+	width: 90%;
+	margin: 5rem;
+}
+
+p {
+	margin: 5rem;
+	font-size: 4rem;
+}
+
+.bigGrid {
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+	width: 100vw;
+  	height: 100vh;
+	justify-self: center;
+}
+
+.introContainer {
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+}
+
+@keyframes colorTransition {
+	from {
+		color: black;
+	}
+
+	to {
+		color: #d8b800;
+	}
+}
+.slowYellow {
+	animation: colorTransition 3s forwards;
+}
+
+.one {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.two {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.three {
+	grid-row: 1;
+	grid-column: 3;
+}
+
+.four {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.five {
+	grid-row: 2;
+	grid-column: 2;
+}
+.six {
+	grid-row: 2;
+	grid-column: 3;
+}
+
+.seven {
+	grid-row: 3;
+	grid-column: 1;
+}
+.eight {
+	grid-row: 3;
+	grid-column: 2;
+}
+
+.nine {
+	grid-row: 3;
+	grid-column: 3;
+}

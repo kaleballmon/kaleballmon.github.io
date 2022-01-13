@@ -15,6 +15,7 @@ body {
 
 p {
 	margin: 3rem;
+	font-size: 24px;
 }
 
 .bigGrid {
@@ -26,11 +27,11 @@ p {
 img {
 	height: 600px;
 	width: 600px;
-	margin: 36px;
+	margin: 24px;
 	
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 600px) {
 	.bigGrid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
